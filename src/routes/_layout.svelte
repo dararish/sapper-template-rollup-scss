@@ -1,8 +1,11 @@
-<script>
-	import Nav from '../components/Nav.svelte';
 
-	export let segment;
-</script>
+<template>
+	<Nav {segment}/>
+	
+	<main>
+		<slot></slot>
+	</main>
+</template>
 
 <style>
 	main {
@@ -15,8 +18,8 @@
 	}
 </style>
 
-<Nav {segment}/>
+<script>
+	import Nav from '../components/Nav.svelte';
 
-<main>
-	<slot></slot>
-</main>
+	export let segment;
+</script>
