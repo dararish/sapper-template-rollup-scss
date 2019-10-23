@@ -5,7 +5,6 @@ module.exports = {
         postcss: {
             plugins: [
                 require('autoprefixer')(),
-                require('cssnano')(),
                 require('postcss-font-magician')(),
                 require('postcss-svgo')()
             ]
